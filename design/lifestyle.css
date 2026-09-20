@@ -1,0 +1,41 @@
+/* V4 — warm accents and life with HBay. AI originals remain unmodified. */
+:root{--blush:#f8e9ed;--pink:#eab8c8;--rose:#91556c}
+.hero{grid-template-columns:52% 48%;min-height:690px}
+.hero-copy{background:var(--water)}
+.hero h1{font-size:clamp(54px,5.55vw,84px);letter-spacing:-3.6px;line-height:1.08}
+.hero h1 .living{display:inline;background:linear-gradient(transparent 78%,var(--pink) 78%,var(--pink) 94%,transparent 94%)}
+.hero-copy .eyebrow{color:var(--blue);max-width:420px}
+.hero .intro{max-width:390px}
+.hero-photo{min-height:690px;background:var(--blush)}
+.hero-photo img{width:100%;height:160%;left:0;bottom:0;object-fit:cover;object-position:center bottom}
+.hero-photo:after{content:'';position:absolute;inset:70% 0 0;background:linear-gradient(transparent,#102b4a70);pointer-events:none}
+.hero-photo .photo-caption{z-index:1}
+.hero-photo .number{color:var(--ink);background:var(--blush);border:0;z-index:1;font-size:10px;letter-spacing:1.1px}
+.ribbon span:before{color:var(--rose)}
+.lifestyle{padding:96px 5%;background:linear-gradient(180deg,#fff8fa 0%,#fafcfc 100%)}
+.lifestyle-head{display:grid;grid-template-columns:1.1fr 1fr;gap:80px;align-items:end;margin-bottom:44px}
+.lifestyle .eyebrow{color:var(--rose);margin-bottom:18px}
+.lifestyle-head p:not(.eyebrow){color:var(--body);font-size:17px;max-width:430px;margin:0}
+.lifestyle-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px}
+.lifestyle-card{margin:0;min-width:0}
+.lifestyle-image{position:relative;overflow:hidden;aspect-ratio:1.15;background:var(--water);border-radius:3px}
+.lifestyle-image img{position:absolute;width:100%;height:154%;bottom:0;left:0;object-fit:cover;object-position:center bottom}
+.lifestyle-image.vineyard img{height:147%}
+.lifestyle-card figcaption{padding-top:22px}
+.lifestyle-card .occasion{display:block;color:var(--rose);font-size:10px;letter-spacing:1.5px;margin-bottom:10px;font-weight:600}
+.lifestyle-card h3{font-size:25px;margin-bottom:10px}
+.lifestyle-card p{font-size:15px;color:var(--body);margin:0;max-width:370px}
+.lifestyle-end{margin-top:34px;padding-top:24px;border-top:1px solid #e8d4dc;display:flex;gap:24px;justify-content:space-between;align-items:center}
+.lifestyle-end small{font-size:11px;color:var(--body);max-width:450px}
+.lifestyle-end .textlink{flex-shrink:0}
+.card-tag{background:var(--blush);color:var(--ink)}
+.packaging{background:linear-gradient(110deg,#fff8fa,#fff)}
+.packaging-photo{background:var(--blush)}
+.packaging-photo img{width:200%;height:100%;right:0;object-fit:cover;object-position:right center}
+.buy{background:var(--blush)}
+@media(min-width:651px) and (max-width:1100px){.nav{padding:0 4%;gap:20px}.links{gap:18px;font-size:12px}.nav-actions .locale{display:none}.nav-actions .button{padding:12px 16px;font-size:12px}.logo{flex-shrink:0}.hero{min-height:600px}.hero-photo{min-height:600px}.hero-copy{padding:48px 8%}.hero h1{font-size:56px;letter-spacing:-2.5px}.lifestyle{padding:72px 5%}.lifestyle-head{gap:36px}.lifestyle-grid{gap:20px}.lifestyle-card h3{font-size:23px}}
+@media(min-width:651px) and (max-width:820px){.nav{flex-wrap:wrap;height:auto;padding-top:12px;padding-bottom:18px;gap:6px 20px}.links{order:3;width:100%;justify-content:center;gap:28px}.hero h1{font-size:48px}.hero-photo{min-height:590px}.hero-copy{padding:42px 8%}.lifestyle-grid{gap:18px}.lifestyle-card h3{font-size:21px}.lifestyle-card p{font-size:14px}.lifestyle-head h2{font-size:40px}}
+@media(max-width:650px){.hero{min-height:0}.hero-copy{padding:48px 24px 44px}.hero h1{font-size:clamp(44px,12.8vw,64px);letter-spacing:-2.5px;margin-bottom:26px}.hero .intro{max-width:340px}.hero-photo{height:auto;min-height:0;aspect-ratio:1.06}.hero-photo img{height:160%}.hero-photo .number{top:18px;right:18px;font-size:9px}.lifestyle{padding:62px 24px}.lifestyle-head{display:block;margin-bottom:30px}.lifestyle-head p:not(.eyebrow){margin-top:24px;font-size:16px}.lifestyle-grid{grid-template-columns:1fr;gap:34px}.lifestyle-card h3{font-size:25px}.lifestyle-card p{max-width:none}.lifestyle-end{align-items:flex-start;flex-direction:column;gap:14px}.lifestyle-end small{font-size:10px}.packaging-photo{height:auto;aspect-ratio:1}.packaging-photo img{width:200%}}
+/* Portrait framing keeps the no-label bottle and excludes baked-in poster text. */
+.packaging-photo{width:100%;max-width:380px;height:auto;aspect-ratio:19/27;justify-self:center}
+.packaging-photo img{width:228%;height:auto;right:0;top:-8%;object-fit:contain}
