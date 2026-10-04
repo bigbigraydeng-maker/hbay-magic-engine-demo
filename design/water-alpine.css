@@ -65,3 +65,10 @@
 @media(max-width:900px){.promise-grid{grid-template-columns:1fr}.depth-gauge b{display:none}.depth-gauge{right:8px;padding:12px 8px;gap:18px}}
 @media(max-width:650px){.source-promise{padding:64px 24px 24px}}
 @media(prefers-reduced-motion:reduce){.mineral{animation:none}.reveal{transition:none}}
+/* hero v2: full-bleed alpine, no white wash */
+.water-hero{background:linear-gradient(90deg,rgba(6,21,34,.78) 0,rgba(6,21,34,.45) 42%,rgba(6,21,34,.08) 75%),linear-gradient(180deg,rgba(6,21,34,.25) 0,rgba(6,21,34,0) 30%,rgba(6,21,34,.55) 100%),url(../assets/water/alpine-peaks.webp) center top/cover no-repeat!important;background-color:#0b2a40!important;background-size:auto,auto,auto 112%!important;background-position:0 0,0 0,center calc(0% - var(--py,0px))!important;min-height:780px;display:flex;align-items:center}
+.water-hero-copy{padding:80px 5%;max-width:860px}
+.water-hero h1,.water-hero .eyebrow{color:#fff}
+.water-hero .eyebrow{color:var(--spring)}
+.water-hero p:not(.eyebrow){color:#e3eef4}
+.water-hero .textlink{color:#fff;border-color:rgba(255,255,255,.55)}
