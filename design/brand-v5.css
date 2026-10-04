@@ -90,3 +90,9 @@
     line-height: 1.08;
   }
 }
+.eyebrow,.card-tag,.photo-caption,.number{font-size:max(11px,1em)}
+.eyebrow{font-size:11px!important}
+.card-tag,.photo-caption{font-size:11px!important}
+.hero-copy .eyebrow.hero-kicker{font-size:clamp(20px,1.9vw,28px)!important;letter-spacing:.2px}
+.retail-photos figure{aspect-ratio:auto;height:340px}
+@media(max-width:650px){.retail-photos figure{height:240px}}
