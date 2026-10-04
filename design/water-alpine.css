@@ -72,3 +72,27 @@
 .water-hero .eyebrow{color:var(--spring)}
 .water-hero p:not(.eyebrow){color:#e3eef4}
 .water-hero .textlink{color:#fff;border-color:rgba(255,255,255,.55)}
+/* unify v1: light base, dark as accent sections */
+.water-chapters{background:#fff;color:var(--ink);border-bottom:1px solid var(--line)}
+.water-chapters span{color:var(--blue)}
+.aquifer-section{background:var(--water)!important;color:var(--ink)}
+.aquifer-section h2{color:var(--ink)}
+.aquifer-section p{color:var(--body)}
+.aquifer-section .eyebrow{color:var(--blue)}
+.aquifer-section .ref a{color:var(--blue);text-decoration:underline}
+.aquifer-map{background:#fff;border:1px solid var(--line)}
+.source-promise{background:var(--deep)}
+.profile{background:#fff!important;color:var(--ink)}
+.profile h2,.profile h3{color:var(--ink)}
+.profile .section-head>p,.profile .explain p{color:var(--body)}
+.profile .eyebrow{color:var(--blue)}
+.profile .textlink{color:var(--blue);border-color:rgba(49,95,186,.4)}
+.sample-panel{background:var(--water);border:1px solid var(--line)}
+.sample-meta,.sample-meta strong,.sample-note{color:var(--body)}
+.sample-meta strong{color:var(--blue)}
+.mineral{border:1px solid rgba(49,95,186,.35);background:radial-gradient(circle at 30% 25%,#fff,#e4eff4 70%)}
+.mineral strong{color:var(--ink)}
+.mineral small,.mineral p{color:var(--body)}
+.mineral:hover,.mineral.active,.mineral:focus-visible{border-color:var(--blue);box-shadow:0 0 0 6px rgba(49,95,186,.12)}
+.mineral-note{color:var(--blue)}
+.water-back .button{white-space:nowrap}

@@ -106,3 +106,14 @@
 .hero-photo img{height:100%!important;width:100%!important;top:0;bottom:auto;left:0;object-fit:cover;object-position:center center}
 .hero-photo::before{content:'';position:absolute;inset:-30px;background:url(../assets/lifestyle/hero-peaks-bottle.webp) center/cover no-repeat;filter:blur(26px) saturate(1.1)}
 .hero-photo img{object-fit:contain!important;-webkit-mask-image:linear-gradient(90deg,transparent 0,#000 14%,#000 86%,transparent 100%);mask-image:linear-gradient(90deg,transparent 0,#000 14%,#000 86%,transparent 100%)}
+/* unify v1: dark hero like the other pages */
+.hero-copy{background:#061522}
+.hero-title-main{color:#fff}
+.hero-tagline em{color:#8fe3d0}
+.hero-tagline .living{color:#fff;background:linear-gradient(transparent 80%,rgba(143,227,208,.55) 80%,rgba(143,227,208,.55) 94%,transparent 94%)}
+.hero .intro{color:#c3d6e3}
+.hero .textlink{color:#fff;border-color:rgba(255,255,255,.5)}
+.hero .textlink span{color:#fff}
+.hero h1.hero-title .hero-tagline em{color:#8fe3d0}
+.hero-copy:after{border-color:rgba(143,227,208,.22);box-shadow:0 0 0 42px rgba(143,227,208,0),0 0 0 84px rgba(143,227,208,.05)}
+.hero h1.hero-title .hero-tagline .living{background:linear-gradient(transparent 80%,rgba(143,227,208,.6) 80%,rgba(143,227,208,.6) 94%,transparent 94%)}
