@@ -1,0 +1,81 @@
+:root{--spring:#8fe3d0;--deep:#061522}
+.page-hero{display:grid;grid-template-columns:1.1fr 1fr;min-height:560px;background:var(--deep);color:#fff}
+.page-hero-copy{padding:88px 6% 72px 5%;display:flex;flex-direction:column;justify-content:center}
+.page-hero .eyebrow{color:var(--spring)}
+.page-hero h1{font-size:clamp(46px,5.4vw,80px);line-height:1.06;letter-spacing:-2.6px;font-weight:450;margin:0 0 26px;color:#fff}
+.page-hero p:not(.eyebrow){color:#c3d6e3;max-width:520px;font-size:18px}
+.page-hero .button{align-self:flex-start;margin-top:12px}
+.page-hero-photo{position:relative;overflow:hidden;min-height:420px}
+.page-hero-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.page-hero.solo{display:block;min-height:0}
+.page-hero.solo .page-hero-copy{max-width:860px;padding:84px 5% 72px}
+.partner-types{padding:96px 5%;background:var(--paper)}
+.partner-types .section-head{margin-bottom:44px}
+.type-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.type-card{background:#fff;border:1px solid var(--line);padding:30px 26px 34px;display:flex;flex-direction:column;gap:12px;transition:transform .3s,border-color .3s,box-shadow .3s}
+.type-card:hover{transform:translateY(-5px);border-color:var(--blue);box-shadow:0 14px 30px rgba(16,43,74,.1)}
+.type-card .no{font-size:13px;letter-spacing:2px;color:var(--blue);font-weight:700}
+.type-card h3{font-size:22px;line-height:1.2;margin:0}
+.type-card p{color:var(--body);font-size:15px;margin:0}
+.type-card a{margin-top:auto;font-size:14px;font-weight:600;color:var(--blue)}
+.cap-band{background:var(--ink);color:#fff;padding:80px 5%;display:grid;grid-template-columns:1fr 1fr 1fr;gap:20px}
+.cap-band article{border:1px solid rgba(255,255,255,.18);padding:30px}
+.cap-band strong{font-size:38px;font-weight:450;letter-spacing:-1px;display:block;margin-bottom:8px}
+.cap-band h3{font-size:18px;margin:0 0 8px}
+.cap-band p{color:#c3d6e3;font-size:15px;margin:0}
+.cap-note{background:var(--ink);color:#9fb6c6;font-size:12px;padding:0 5% 48px;margin:0}
+.formats{padding:80px 5%;background:var(--water)}
+.formats-list{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-top:1px solid var(--line);margin-top:32px}
+.formats-list div{padding:24px 20px 24px 0;border-bottom:1px solid var(--line)}
+.formats-list strong{display:block;font-size:15px;color:var(--blue);margin-bottom:6px}
+.formats-list span{font-size:20px}
+.next-steps{padding:80px 5%;display:grid;grid-template-columns:repeat(3,1fr);gap:40px;background:var(--paper)}
+.next-steps .step{border-top:2px solid var(--blue);padding-top:20px}
+.next-steps .step b{display:block;font-size:13px;letter-spacing:2px;color:var(--blue);margin-bottom:10px}
+.next-steps .step h3{margin:0 0 8px;font-size:22px}
+.next-steps .step p{margin:0;color:var(--body);font-size:16px}
+.form-section{padding:96px 5%;background:#fff;display:grid;grid-template-columns:.8fr 1.2fr;gap:72px;border-top:1px solid var(--line)}
+.form-intro h2{margin-bottom:20px}
+.form-intro p{color:var(--body);max-width:420px}
+.form-intro ul{list-style:none;padding:0;margin:28px 0 0;display:grid;gap:14px;font-size:16px}
+.form-intro li span{display:block;font-size:12px;letter-spacing:1.6px;text-transform:uppercase;color:var(--blue);font-weight:700}
+.enquiry{display:grid;grid-template-columns:1fr 1fr;gap:22px 24px}
+.field{display:flex;flex-direction:column;gap:8px}
+.field.full,fieldset.full{grid-column:1/-1}
+.field label,fieldset legend{font-size:14px;font-weight:600;color:var(--ink)}
+.field label small{font-weight:400;color:var(--body)}
+.field input,.field select,.field textarea{font:inherit;font-size:16px;color:var(--ink);background:#fff;border:1px solid #9fb6c6;border-radius:0;padding:14px 14px;min-height:50px;width:100%;transition:border-color .2s,box-shadow .2s}
+.field textarea{min-height:140px;resize:vertical}
+.field input:hover,.field select:hover,.field textarea:hover{border-color:var(--blue)}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--blue);box-shadow:0 0 0 3px rgba(49,95,186,.2)}
+.field input:user-invalid,.field select:user-invalid,.field textarea:user-invalid{border-color:#b3261e}
+.field .err{color:#b3261e;font-size:13px;min-height:0;display:none}
+.field.bad .err{display:block}
+fieldset{border:0;padding:0;margin:0}
+.checks{display:flex;flex-wrap:wrap;gap:10px;margin-top:10px}
+.checks label{position:relative;cursor:pointer}
+.checks input{position:absolute;opacity:0}
+.checks span{display:inline-block;border:1px solid #9fb6c6;padding:10px 16px;font-size:15px;transition:all .2s}
+.checks label:hover span{border-color:var(--blue)}
+.checks input:checked+span{background:var(--blue);border-color:var(--blue);color:#fff}
+.checks input:focus-visible+span{box-shadow:0 0 0 3px rgba(49,95,186,.35)}
+.consent{display:flex;gap:12px;align-items:flex-start;font-size:14px;color:var(--body)}
+.consent input{margin-top:4px;width:18px;height:18px;flex:none}
+.consent a{color:var(--blue);text-decoration:underline}
+.form-actions{display:flex;align-items:center;gap:24px;flex-wrap:wrap}
+.form-actions button{cursor:pointer;border:0;font:inherit}
+.form-status{font-size:15px;color:var(--body);margin:0}
+.form-status.ok{color:#0d6b4f}
+.form-note{font-size:12px;color:var(--body);max-width:640px}
+.office-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:32px}
+.office{border:1px solid var(--line);padding:26px;background:#fff}
+.office h3{margin:0 0 12px;font-size:20px}
+.office p{margin:4px 0;color:var(--body);font-size:16px}
+.office a{color:var(--blue);text-decoration:underline;text-underline-offset:3px}
+.doc{padding:84px 5%;max-width:900px}
+.doc h2{font-size:26px;margin:40px 0 12px;letter-spacing:-.5px}
+.doc p,.doc li{color:var(--body);font-size:17px}
+.doc .draft{display:inline-block;background:#fff3cd;color:#664d03;padding:6px 12px;font-size:13px;font-weight:600;margin-bottom:20px}
+@media(max-width:1000px){.type-grid{grid-template-columns:1fr 1fr}.form-section{grid-template-columns:1fr;gap:40px}.cap-band,.next-steps{grid-template-columns:1fr}.formats-list{grid-template-columns:1fr 1fr}.page-hero{grid-template-columns:1fr}.page-hero-photo{min-height:300px}}
+@media(max-width:650px){.type-grid,.enquiry,.office-grid{grid-template-columns:1fr}.partner-types,.form-section,.formats,.next-steps,.cap-band{padding:62px 24px}.page-hero-copy{padding:56px 24px 44px}.page-hero.solo .page-hero-copy{padding:56px 24px}.doc{padding:56px 24px}.cap-note{padding:0 24px 40px}}
+.page-hero.solo{background:linear-gradient(90deg,rgba(6,21,34,.94) 0,rgba(6,21,34,.7) 55%,rgba(6,21,34,.35)),url(../assets/water/alpine-peaks.webp) center/cover no-repeat,var(--deep)}
