@@ -96,3 +96,10 @@
 .hero-copy .eyebrow.hero-kicker{font-size:clamp(20px,1.9vw,28px)!important;letter-spacing:.2px}
 .retail-photos figure{aspect-ratio:auto;height:340px}
 @media(max-width:650px){.retail-photos figure{height:240px}}
+/* hero v3: artesian headline leads, tagline supports */
+.hero h1.hero-title{font-size:inherit;letter-spacing:0;line-height:1;margin:0 0 28px}
+.hero-title-main{display:block;font-size:clamp(52px,5.4vw,84px);line-height:1.04;letter-spacing:-3px;font-weight:500;color:var(--ink)}
+.hero-tagline{display:block;margin-top:22px;font-size:clamp(24px,2.3vw,34px);line-height:1.2;letter-spacing:-1px;font-weight:450}
+.hero-tagline em{font-style:normal;color:var(--blue)}
+.hero-photo img{object-position:center 12%}
+@media(max-width:650px){.hero-title-main{font-size:clamp(40px,11.5vw,56px);letter-spacing:-2px}.hero-tagline{font-size:22px}.hero-photo img{height:100%}}
