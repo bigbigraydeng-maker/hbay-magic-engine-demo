@@ -1,0 +1,30 @@
+:root{--glacier:#e9f3f6;--deep:#061522;--spring:#8fe3d0}
+.water-hero{display:block;min-height:840px;background:linear-gradient(180deg,#e9f3f6 0,#e9f3f6 46%,rgba(233,243,246,.8) 58%,rgba(233,243,246,0) 76%),url(../assets/water/alpine-peaks.webp) center bottom/cover no-repeat;background-color:#bcd8e6}
+.water-hero-copy{padding:88px 5% 0;max-width:820px}
+.water-hero h1{font-size:clamp(52px,6vw,88px)}
+.water-hero p:not(.eyebrow){max-width:520px}
+.water-chapters{background:var(--deep);color:#c3d6e3;border-bottom:1px solid rgba(255,255,255,.12)}
+.water-chapters span{color:var(--spring)}
+#landscape{background:linear-gradient(90deg,rgba(6,21,34,.94) 0,rgba(6,21,34,.72) 48%,rgba(6,21,34,.35) 100%),url(../assets/water/strata.webp) right center/cover no-repeat;background-color:var(--deep);color:#fff;padding:120px 5%}
+#landscape h2{color:#fff}
+#landscape .eyebrow,#artesian .eyebrow,.profile .eyebrow{color:var(--spring)}
+#landscape p{color:#c3d6e3}
+#landscape .textlink{color:#fff;border-color:rgba(255,255,255,.4)}
+.geology-inset{background:rgba(6,21,34,.55);border:1px solid rgba(143,227,208,.35);backdrop-filter:blur(6px);color:#fff}
+.geology-inset strong{color:var(--spring)}
+.geology-inset p{color:#c3d6e3}
+.aquifer-section{background:linear-gradient(180deg,#061522 0,#04101a 100%);padding:96px 5% 64px}
+.aquifer-section h2{color:#fff}
+.profile{background:linear-gradient(180deg,#04101a 0,#06182a 100%);color:#fff;padding:64px 5% 96px}
+.profile h2,.profile h3{color:#fff}
+.profile .section-head>p,.profile .explain p{color:#c3d6e3}
+.sample-panel{background:rgba(255,255,255,.05);border:1px solid rgba(143,227,208,.25)}
+.sample-meta,.sample-meta strong,.sample-note{color:#c3d6e3}
+.mineral-grid{border:0;gap:20px;grid-template-columns:repeat(5,1fr);margin:36px 0}
+.mineral{aspect-ratio:1;border:1px solid rgba(255,255,255,.4);border-radius:50%;padding:12px!important;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;background:radial-gradient(circle at 30% 25%,rgba(255,255,255,.18),rgba(255,255,255,.03) 60%)}
+.mineral strong{font-size:clamp(30px,3.2vw,46px);color:#fff}
+.mineral small,.mineral p{color:#c3d6e3;margin:4px 0 0;font-size:13px}
+.profile .textlink{color:#fff;border-color:rgba(255,255,255,.4)}
+@media(max-width:900px){.mineral-grid{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:650px){.water-hero{min-height:620px}.water-hero-copy{padding:48px 24px 0}.mineral-grid{grid-template-columns:repeat(2,1fr);gap:12px}#landscape,.aquifer-section,.profile{padding:72px 24px}#landscape{background-position:70% center}}
+.water-hero p:not(.eyebrow){color:#2c465c}
