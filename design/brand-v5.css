@@ -101,5 +101,8 @@
 .hero-title-main{display:block;font-size:clamp(52px,5.4vw,84px);line-height:1.04;letter-spacing:-3px;font-weight:500;color:var(--ink)}
 .hero-tagline{display:block;margin-top:22px;font-size:clamp(24px,2.3vw,34px);line-height:1.2;letter-spacing:-1px;font-weight:450}
 .hero-tagline em{font-style:normal;color:var(--blue)}
-.hero-photo img{object-position:center 12%}
+.hero-photo img{object-position:center center}
 @media(max-width:650px){.hero-title-main{font-size:clamp(40px,11.5vw,56px);letter-spacing:-2px}.hero-tagline{font-size:22px}.hero-photo img{height:100%}}
+.hero-photo img{height:100%!important;width:100%!important;top:0;bottom:auto;left:0;object-fit:cover;object-position:center center}
+.hero-photo::before{content:'';position:absolute;inset:-30px;background:url(../assets/lifestyle/hero-peaks-bottle.webp) center/cover no-repeat;filter:blur(26px) saturate(1.1)}
+.hero-photo img{object-fit:contain!important;-webkit-mask-image:linear-gradient(90deg,transparent 0,#000 14%,#000 86%,transparent 100%);mask-image:linear-gradient(90deg,transparent 0,#000 14%,#000 86%,transparent 100%)}
