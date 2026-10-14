@@ -1,0 +1,82 @@
+/* Brand-first pass: lifestyle leads, factory steps back, type and contrast tidied. */
+
+/* Readable small type and calmer tracking. */
+.review{font-size:12px;letter-spacing:.2px}
+.eyebrow{font-size:12px!important;letter-spacing:.04em}
+.card-tag,.photo-caption,.lifestyle-attribution,.range-lineup-hint,.number{font-size:12px!important;letter-spacing:.02em}
+.ribbon{letter-spacing:.03em}
+.dialog .eyebrow,dialog .eyebrow{letter-spacing:.04em}
+@media(max-width:650px){.review{font-size:12px}.eyebrow,.card-tag,.photo-caption,.number{font-size:12px!important}.range-lineup-hint{font-size:12px}.buy small,.source-copy small,.packaging small{font-size:12px}.demo-footnote{font-size:12px}}
+
+/* Headlines: soften squeezed tracking. */
+h2{letter-spacing:-.02em}
+.source-title .big{letter-spacing:-.02em}
+.hero-title-main{letter-spacing:-.02em}
+.hero-tagline{letter-spacing:-.01em}
+
+/* Photo captions: solid scrim instead of a glow. */
+.photo-caption{text-shadow:none;background:rgba(6,21,34,.62);padding:4px 10px;border-radius:2px;left:24px}
+.retail-photos figcaption{text-shadow:none;background:rgba(6,21,34,.62);padding:3px 9px;border-radius:2px}
+
+/* Brand: bigger logo, stronger tagline. */
+.logo{width:170px;height:90px}
+.hero-tagline{font-size:clamp(28px,2.8vw,42px);font-weight:500}
+.hero-tagline em{color:#8fe3d0}
+
+/* Moments: lifestyle images lead the page after the hero. */
+.moments{padding:96px 5%;background:var(--paper)}
+.moments-head{display:grid;grid-template-columns:1.1fr 1fr;gap:80px;align-items:end;margin-bottom:44px}
+.moments-head h2{max-width:620px}
+.moments-head p{color:var(--body);font-size:17px;max-width:44ch;margin:0}
+.moments-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+.moments-grid figure{margin:0}
+.moments-grid img{display:block;width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:3px;background:var(--water)}
+.moments-grid figcaption{padding-top:14px;font-size:20px;font-weight:500;letter-spacing:-.01em}
+.moments-note{font-size:12px;color:var(--body);margin:26px 0 0}
+
+/* Story: compact brand story replaces the factory showcase. */
+.story{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center;padding:96px 5%;background:var(--ink);color:#fff}
+.story-copy h2{max-width:11em}
+.story-copy p{color:#d3e2ec;font-size:17px;max-width:44ch;margin:22px 0 0}
+.story-copy .textlink{margin-top:28px;color:#fff;border-color:#6c8ba1}
+.story-photo{margin:0;position:relative;overflow:hidden;border-radius:3px}
+.story-photo img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover}
+.story-photo figcaption{position:absolute;left:16px;bottom:14px;font-size:12px;color:#fff;background:rgba(6,21,34,.62);padding:3px 9px;border-radius:2px}
+
+/* Contrast and line length. */
+.hero-photo::before{background-image:url(../assets/lifestyle/hero-peaks-bottle.webp)}
+.lifestyle-end small,.lifestyle-attribution,.demo-footnote{max-width:70ch}
+.demo-footnote{margin-left:auto;margin-right:auto}
+
+@media(max-width:900px){
+  .moments-head,.story{grid-template-columns:1fr;gap:32px}
+  .moments-grid{gap:16px}
+}
+@media(max-width:650px){
+  .logo{width:130px;height:68px}
+  .moments{padding:62px 24px}
+  .moments-grid{grid-template-columns:1fr;gap:28px}
+  .moments-grid img{aspect-ratio:4/3}
+  .story{padding:62px 24px}
+  .moments-head p{font-size:16px}
+}
+
+/* Tidy remaining labels and scrims. */
+.report-card .meta,.source-title .small,.sample-meta,.quality-link .num{letter-spacing:.03em}
+.report-card .meta{font-size:12px}
+.source-art:after{background:linear-gradient(0deg,rgba(6,21,34,.92) 0,rgba(6,21,34,.55) 45%,rgba(6,21,34,.15) 100%)}
+.card-tag{letter-spacing:.03em}
+.sample-panel .sample-note{max-width:52ch;font-size:13px}
+/* Crop away the poster headline baked into the concept image; keep bottles and landscape. */
+.story-photo img{aspect-ratio:2.1/1;object-position:center bottom}
+@media(max-width:900px){.story-photo img{aspect-ratio:16/9}}
+
+/* Other pages: comfortable measure and note spacing. */
+.cap-note,.note{padding:8px 0}
+main p:not([class]),.intro p,.note,.cap-note{max-width:70ch}
+p:not([class]){max-width:68ch}
+.type-card .no{display:inline-block;padding:4px 0}
+.steps b,.step b,[class*=step] b{display:inline-block;padding:6px 0}
+.doc p,.doc li,.intro .note,.intro .status{max-width:54ch!important}
+.no,.step b{display:inline-block;padding:6px 0!important}
+.cap-note{padding-top:8px!important;padding-bottom:48px!important}
