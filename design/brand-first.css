@@ -70,3 +70,13 @@ h2{letter-spacing:-.02em}
 /* Crop away the poster headline baked into the concept image; keep bottles and landscape. */
 .story-photo img{aspect-ratio:2.1/1;object-position:center bottom}
 @media(max-width:900px){.story-photo img{aspect-ratio:16/9}}
+
+/* Other pages: comfortable measure and note spacing. */
+.cap-note,.note{padding:8px 0}
+main p:not([class]),.intro p,.note,.cap-note{max-width:70ch}
+p:not([class]){max-width:68ch}
+.type-card .no{display:inline-block;padding:4px 0}
+.steps b,.step b,[class*=step] b{display:inline-block;padding:6px 0}
+.doc p,.doc li,.intro .note,.intro .status{max-width:54ch!important}
+.no,.step b{display:inline-block;padding:6px 0!important}
+.cap-note{padding-top:8px!important;padding-bottom:48px!important}
