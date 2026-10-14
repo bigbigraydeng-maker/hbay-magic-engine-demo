@@ -8,7 +8,7 @@
 <meta name="description" content="HBay natural artesian water, bottled in Hastings, Hawke’s Bay. Find it at PAK’nSAVE, New World and Four Square.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400&family=Hanken+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="home.css">
 </head>
 <body>
@@ -17,83 +17,102 @@
 <header class="nav">
   <a class="nav-logo" href="index.html" aria-label="HBay Water home"><img src="../assets/brand/hbay-logo.svg" alt="HBay Water" width="132" height="69"></a>
   <nav class="nav-links" id="nav-links" aria-label="Main">
+    <a href="#notes">Tasting notes</a>
+    <a href="#list">The range</a>
     <a href="our-water.html">Our water</a>
-    <a href="#range">Our range</a>
     <a href="#buy">Where to buy</a>
-    <a href="partner.html">Partner with HBay</a>
   </nav>
   <button class="nav-toggle" type="button" aria-controls="nav-links" aria-expanded="false">Menu</button>
 </header>
 
 <main>
   <section class="hero" aria-labelledby="hero-title">
-    <img class="hero-photo" src="../assets/lifestyle/hero-peaks-bottle.webp" width="1218" height="1540" fetchpriority="high" alt="A 1.5 litre bottle of HBay Natural Artesian Water on a rock beside a mountain lake">
+    <img class="hero-photo" src="../assets/home/long-lunch.webp" width="1448" height="746" fetchpriority="high" alt="HBay 500 mL, 1.5 L and 600 mL bottles on a lunch table above vineyards and a lake">
     <div class="hero-copy">
-      <h1 id="hero-title">Artesian water from Hawke’s&nbsp;Bay.</h1>
-      <p class="hero-slogan">More Natural Better Living</p>
-      <div class="hero-actions">
-        <a class="btn" href="#buy">Find HBay in store
-          <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11M11 5l5 5-5 5"/></svg></a>
-        <a class="link" href="#range">See the range</a>
+      <h1 id="hero-title">Bottled in Hawke’s&nbsp;Bay. <span class="second">Poured at the long&nbsp;lunch.</span></h1>
+      <div class="hero-side">
+        <p class="hero-slogan">More Natural Better Living</p>
+        <div class="hero-actions">
+          <a class="btn" href="#buy">Find HBay in store</a>
+          <a class="link" href="#notes">Read the tasting notes</a>
+        </div>
       </div>
     </div>
-    <p class="hero-credit">AI-generated concept image</p>
-    <div class="band" aria-hidden="true"><span>Pure New Zealand</span><span class="band-mid">Natural artesian water</span><span>Hawke’s Bay</span></div>
+    <p class="credit">AI-generated concept image</p>
   </section>
 
-  <section class="range" id="range" aria-labelledby="range-title">
+  <section class="notes" id="notes" aria-labelledby="notes-title">
+    <div class="wrap notes-grid">
+      <div class="notes-intro">
+        <h2 id="notes-title">Tasting notes.</h2>
+        <p>Hawke’s Bay sets a good table: orchards, vineyards and long lunches on the east coast of the North Island. HBay is the water from beneath it, bottled in Hastings and carried to tables across New Zealand.</p>
+      </div>
+      <div>
+        <dl class="sheet">
+          <div><dt>Origin</dt><dd>Hastings, Hawke’s Bay, New Zealand</dd></div>
+          <div><dt>Source</dt><dd>Natural artesian water, held in layers of gravel and sediment beneath the Heretaunga Plains</dd></div>
+          <div><dt class="raw">pH</dt><dd>7.3</dd></div>
+          <div><dt>Total dissolved solids</dt><dd>113 mg/L</dd></div>
+          <div><dt>Calcium</dt><dd>18.7 mg/L</dd></div>
+        </dl>
+        <p class="sheet-note">Sample values from the supplied internal summary, citing Hill Labs report 4306093.2 (sample HBL500X24PW). Results describe one sample, not a fixed specification. <a href="reports.html?doc=water">View the summary</a></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="moments" aria-labelledby="moments-title">
     <div class="wrap">
-      <div class="range-head">
-        <h2 id="range-title">One water. Every size.</h2>
-        <p>The same natural artesian water, from a lunchbox bottle to a 16&nbsp;litre container for the office or the bach.</p>
-      </div>
-      <figure class="lineup">
-        <div class="lineup-scroll"><img src="../assets/home/lineup.webp" width="1420" height="318" loading="lazy" alt="The HBay range: 330 mL, 500 mL, 600 mL and 1.5 L bottles, 6 L, 10 L and 16 L containers, a 7 L bag and a 10 L bag-in-box"></div>
-      </figure>
-      <dl class="formats">
-        <div><dt>Bottles</dt><dd>330&nbsp;mL · 500&nbsp;mL · 600&nbsp;mL · 1.5&nbsp;L</dd></div>
-        <div><dt>Containers</dt><dd>6&nbsp;L · 10&nbsp;L · 16&nbsp;L</dd></div>
-        <div><dt>Bag and bag-in-box</dt><dd>7&nbsp;L bag · 10&nbsp;L box</dd></div>
-      </dl>
+      <h2 id="moments-title">Wherever the table is.</h2>
+    </div>
+    <div class="wrap moments-row">
+      <figure><img src="../assets/lifestyle/v5/kitchen-morning.webp" width="1440" height="1076" loading="lazy" alt="An HBay bottle and glasses on a kitchen table on a bright morning"><figcaption>Slow mornings at home</figcaption></figure>
+      <figure><img src="../assets/lifestyle/v5/coastal-picnic.webp" width="1440" height="1076" loading="lazy" alt="An HBay bottle on a picnic blanket above a beach"><figcaption>A blanket by the sea</figcaption></figure>
+      <figure><img src="../assets/lifestyle/v5/trail-break.webp" width="1440" height="1076" loading="lazy" alt="An HBay bottle on a bench beside a country cycle trail"><figcaption>A pause on the trail</figcaption></figure>
+    </div>
+    <div class="wrap"><p class="credit-line">Lifestyle images are AI-generated concepts. Final photography to follow.</p></div>
+  </section>
+
+  <section class="list" id="list" aria-labelledby="list-title"><span id="range" class="anchor"></span>
+    <div class="wrap">
+      <h2 id="list-title">The range.</h2>
+      <ol class="menu">
+        <li><span class="item">330 mL · 500 mL</span><span class="dots" aria-hidden="true"></span><span class="use">For the lunchbox and the bag</span></li>
+        <li><span class="item">600 mL</span><span class="dots" aria-hidden="true"></span><span class="use">Also in the no-label pack</span></li>
+        <li><span class="item">1.5 L</span><span class="dots" aria-hidden="true"></span><span class="use">For the table</span></li>
+        <li><span class="item">6 L · 10 L · 16 L</span><span class="dots" aria-hidden="true"></span><span class="use">For the bach, the office and the boat</span></li>
+        <li><span class="item">7 L bag · 10 L box</span><span class="dots" aria-hidden="true"></span><span class="use">For camping and time away</span></li>
+      </ol>
     </div>
   </section>
 
-  <section class="source" id="water" aria-labelledby="source-title">
-    <span id="story" class="anchor"></span>
-    <figure class="source-art">
-      <img src="../assets/home/strata.webp" width="930" height="1294" loading="lazy" alt="Illustration of layered gravel, sediment and water beneath the ground">
-      <figcaption>Illustration · AI-generated</figcaption>
-    </figure>
-    <div class="source-copy">
-      <h2 id="source-title">Beneath the Heretaunga Plains.</h2>
-      <p>Rivers and changing coastlines laid down layer after layer of gravel and fine sediment across Hawke’s Bay. Water held deep in those layers rises under its own pressure. That is what makes it artesian.</p>
-      <p class="figure"><strong>250,000</strong> years of layers, by the regional geology.</p>
-      <p class="note">The figure describes how the plains formed, not the age of the water. Source: Heretaunga Plains Groundwater Study, 1997.</p>
-      <a class="link link-light" href="our-water.html">Read about our water</a>
+  <section class="source" aria-labelledby="source-title"><span id="water" class="anchor"></span><span id="story" class="anchor"></span>
+    <div class="wrap source-grid">
+      <h2 id="source-title">Rising from beneath the Heretaunga Plains.</h2>
+      <div>
+        <p>Rivers and changing coastlines laid down layer upon layer of gravel and fine sediment across Hawke’s Bay. Water held deep in those layers rises under its own pressure. That is what makes it artesian.</p>
+        <p class="aside">The plains formed over some 250,000 years. That figure describes the landscape, not the age of the water. Source: Heretaunga Plains Groundwater Study, 1997.</p>
+        <a class="link" href="our-water.html">Read about our water</a>
+      </div>
     </div>
   </section>
 
   <section class="buy" id="buy" aria-labelledby="buy-title">
-    <div class="wrap buy-grid">
+    <div class="wrap buy-wrap">
       <div>
         <h2 id="buy-title">Find HBay in store.</h2>
         <p class="buy-intro">On the shelf at familiar New Zealand supermarkets. Range varies by store.</p>
         <ul class="stores">
-          <li><a href="https://www.paknsave.co.nz/shop/search?pg=1&amp;q=hbay" target="_blank" rel="noopener"><span>PAK’nSAVE<small>Search HBay online</small></span><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M6 14 14 6M8 6h6v6"/></svg></a></li>
-          <li><a href="https://www.newworld.co.nz/shop/search?pg=1&amp;q=hbay" target="_blank" rel="noopener"><span>New World<small>Search HBay online</small></span><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M6 14 14 6M8 6h6v6"/></svg></a></li>
-          <li><a href="https://www.foursquare.co.nz/store-finder" target="_blank" rel="noopener"><span>Four Square<small>Find your local store</small></span><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M6 14 14 6M8 6h6v6"/></svg></a></li>
+          <li><a href="https://www.paknsave.co.nz/shop/search?pg=1&amp;q=hbay" target="_blank" rel="noopener"><span>PAK’nSAVE</span><small>Search HBay online</small></a></li>
+          <li><a href="https://www.newworld.co.nz/shop/search?pg=1&amp;q=hbay" target="_blank" rel="noopener"><span>New World</span><small>Search HBay online</small></a></li>
+          <li><a href="https://www.foursquare.co.nz/store-finder" target="_blank" rel="noopener"><span>Four Square</span><small>Find your local store</small></a></li>
         </ul>
       </div>
-      <figure class="shelf">
-        <img src="../assets/home/shelf.webp" width="1400" height="700" loading="lazy" alt="HBay multipacks stacked on a supermarket floor display">
-        <figcaption>In store, New Zealand</figcaption>
-      </figure>
     </div>
   </section>
 
   <aside class="trade">
     <div class="wrap trade-row">
-      <p>Stocking HBay for retail, hospitality or export?</p>
+      <p>Pouring HBay at your venue, or stocking it for retail or export?</p>
       <a class="link" href="partner.html">Partner with HBay</a>
     </div>
   </aside>
@@ -103,13 +122,13 @@
   <div class="wrap footer-row">
     <div>
       <img src="../assets/brand/hbay-logo.svg" alt="HBay Water" width="110" height="58">
-      <p>More Natural Better Living</p>
+      <p class="footer-slogan">More Natural Better Living</p>
     </div>
     <nav aria-label="Footer">
+      <a href="#notes">Tasting notes</a>
+      <a href="#list">The range</a>
       <a href="our-water.html">Our water</a>
-      <a href="#range">Our range</a>
       <a href="#buy">Where to buy</a>
-      <a href="reports.html?doc=water">Water test summary</a>
       <a href="partner.html">Partner with HBay</a>
       <a href="trade-export.html">Trade &amp; export</a>
       <a href="contact.html">Contact</a>
