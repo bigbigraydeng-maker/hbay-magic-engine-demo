@@ -28,10 +28,10 @@ h2{letter-spacing:-.02em}
 .moments-head{display:grid;grid-template-columns:1.1fr 1fr;gap:80px;align-items:end;margin-bottom:44px}
 .moments-head h2{max-width:620px}
 .moments-head p{color:var(--body);font-size:17px;max-width:44ch;margin:0}
-.moments-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+.moments-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px;align-items:start}
 .moments-grid figure{margin:0}
-.moments-grid img{display:block;width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:3px;background:var(--water)}
-.moments-grid figcaption{padding-top:14px;font-size:20px;font-weight:500;letter-spacing:-.01em}
+.moments-grid img{display:block;width:100%;height:auto;border-radius:3px;background:var(--water)}
+.moments-grid figcaption{padding-top:14px;font-size:18px;font-weight:500;letter-spacing:-.01em}
 .moments-note{font-size:12px;color:var(--body);margin:26px 0 0}
 
 /* Story: compact brand story replaces the factory showcase. */
@@ -50,13 +50,12 @@ h2{letter-spacing:-.02em}
 
 @media(max-width:900px){
   .moments-head,.story{grid-template-columns:1fr;gap:32px}
-  .moments-grid{gap:16px}
+  .moments-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
 }
 @media(max-width:650px){
   .logo{width:130px;height:68px}
   .moments{padding:62px 24px}
   .moments-grid{grid-template-columns:1fr;gap:28px}
-  .moments-grid img{aspect-ratio:4/3}
   .story{padding:62px 24px}
   .moments-head p{font-size:16px}
 }
