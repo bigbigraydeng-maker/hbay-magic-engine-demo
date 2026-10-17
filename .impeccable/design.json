@@ -1,0 +1,179 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-17T02:05:26Z",
+  "title": "Design System: HBay Water",
+  "extensions": {
+    "colorMeta": {
+      "navy-ink": {
+        "role": "primary",
+        "displayName": "Deep Hawke’s Bay Ink",
+        "canonical": "#0E2233",
+        "tonalRamp": ["oklch(15.0% 0.042 246.2)", "oklch(26.4% 0.042 246.2)", "oklch(37.9% 0.042 246.2)", "oklch(49.3% 0.042 246.2)", "oklch(60.7% 0.042 246.2)", "oklch(72.1% 0.042 246.2)", "oklch(83.6% 0.042 246.2)", "oklch(95.0% 0.042 246.2)"]
+      },
+      "hbay-brand-blue": {
+        "role": "secondary",
+        "displayName": "HBay Brand Blue",
+        "canonical": "#1E95D4",
+        "tonalRamp": ["oklch(15.0% 0.135 239.0)", "oklch(26.4% 0.135 239.0)", "oklch(37.9% 0.135 239.0)", "oklch(49.3% 0.135 239.0)", "oklch(60.7% 0.135 239.0)", "oklch(72.1% 0.135 239.0)", "oklch(83.6% 0.135 239.0)", "oklch(95.0% 0.135 239.0)"]
+      },
+      "link-blue": {
+        "role": "secondary",
+        "displayName": "Deep Link Blue",
+        "canonical": "#0D6FA3",
+        "tonalRamp": ["oklch(15.0% 0.115 240.2)", "oklch(26.4% 0.115 240.2)", "oklch(37.9% 0.115 240.2)", "oklch(49.3% 0.115 240.2)", "oklch(60.7% 0.115 240.2)", "oklch(72.1% 0.115 240.2)", "oklch(83.6% 0.115 240.2)", "oklch(95.0% 0.115 240.2)"]
+      },
+      "linen-ground": {
+        "role": "neutral",
+        "displayName": "Cool Linen",
+        "canonical": "#F7F8F6",
+        "tonalRamp": ["oklch(15.0% 0.003 128.5)", "oklch(26.4% 0.003 128.5)", "oklch(37.9% 0.003 128.5)", "oklch(49.3% 0.003 128.5)", "oklch(60.7% 0.003 128.5)", "oklch(72.1% 0.003 128.5)", "oklch(83.6% 0.003 128.5)", "oklch(95.0% 0.003 128.5)"]
+      },
+      "white-surface": {
+        "role": "neutral",
+        "displayName": "White Surface",
+        "canonical": "#FFFFFF",
+        "tonalRamp": ["oklch(15.0% 0.000 89.9)", "oklch(26.4% 0.000 89.9)", "oklch(37.9% 0.000 89.9)", "oklch(49.3% 0.000 89.9)", "oklch(60.7% 0.000 89.9)", "oklch(72.1% 0.000 89.9)", "oklch(83.6% 0.000 89.9)", "oklch(95.0% 0.000 89.9)"]
+      },
+      "soft-ink": {
+        "role": "neutral",
+        "displayName": "Soft Ink",
+        "canonical": "#4A5B69",
+        "tonalRamp": ["oklch(15.0% 0.031 243.3)", "oklch(26.4% 0.031 243.3)", "oklch(37.9% 0.031 243.3)", "oklch(49.3% 0.031 243.3)", "oklch(60.7% 0.031 243.3)", "oklch(72.1% 0.031 243.3)", "oklch(83.6% 0.031 243.3)", "oklch(95.0% 0.031 243.3)"]
+      },
+      "hairline-rule": {
+        "role": "neutral",
+        "displayName": "Tasting-Sheet Rule",
+        "canonical": "#C9D1D6",
+        "tonalRamp": ["oklch(15.0% 0.011 234.8)", "oklch(26.4% 0.011 234.8)", "oklch(37.9% 0.011 234.8)", "oklch(49.3% 0.011 234.8)", "oklch(60.7% 0.011 234.8)", "oklch(72.1% 0.011 234.8)", "oklch(83.6% 0.011 234.8)", "oklch(95.0% 0.011 234.8)"]
+      }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Wine-label Display", "purpose": "Large homepage and route-page headlines." },
+      "headline": { "displayName": "Section Headline", "purpose": "Primary section titles." },
+      "title": { "displayName": "Editorial Title", "purpose": "Supporting headings and selected data values." },
+      "body": { "displayName": "Practical Text", "purpose": "Paragraphs and longer explanatory copy." },
+      "label": { "displayName": "Interface Label", "purpose": "Compact interface and demo text." },
+      "navigation": { "displayName": "Navigation Link", "purpose": "Shared desktop navigation links." }
+    },
+    "shadows": [],
+    "motion": [
+      { "name": "state-transition", "value": "0.2s", "purpose": "Short button, link, and focusable disclosure state changes." },
+      { "name": "disclosure-ease", "value": "ease", "purpose": "Disclosure expansion and collapse." }
+    ],
+    "breakpoints": [
+      { "name": "home-intermediate", "value": "960px" },
+      { "name": "tablet", "value": "900px" },
+      { "name": "mobile", "value": "720px" }
+    ],
+    "implementationReview": {
+      "detectorPasses": 1,
+      "findings": {
+        "total": 29,
+        "low-contrast": 5,
+        "cramped-padding": 18,
+        "tight-leading": 3,
+        "layout-transition": 3
+      },
+      "retainedDetail": "Category totals only; the raw item-by-item output was not retained.",
+      "manualContrastCorrections": [
+        "First-screen supporting copy",
+        "Reports download hover text",
+        "Homepage source aside on the light source section",
+        "Link hover text on dark capability bands and notes"
+      ],
+      "detectorRerun": false,
+      "remainingFindingsDisposition": "Not re-audited; no claim that all original findings were resolved.",
+      "visualReview": {
+        "scope": "All eight routes at 1440px desktop and 390px mobile; 16 full-page screenshots.",
+        "verdict": "ship",
+        "blockingFindings": [],
+        "nonBlockingFollowUps": [
+          "Use a wider factory entrance crop if a suitable real photo is available.",
+          "Reduce the repeated Port of Napier mention on Trade & Export.",
+          "Add the confirmed product family photo after client approval.",
+          "Check geology and aquifer report detail states during launch preparation."
+        ],
+        "coverageLimitations": [
+          "The reviewer did not receive the QUALITY BAR card or craft-floor reference path; the review used PRODUCT.md, the surface contract, and screenshots."
+        ]
+      }
+    }
+  },
+  "components": [
+    {
+      "name": "Primary Action",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Use for the main next step on a light surface.",
+      "html": "<a class=\"ds-button\" href=\"#\">Find HBay in store</a>",
+      "css": ".ds-button { display: inline-flex; align-items: center; justify-content: center; min-height: 50px; padding: 0 24px; border: 1px solid var(--ink); border-radius: 0; background: var(--ink); color: var(--linen); font: 500 15px/1.2 var(--sans); text-decoration: none; transition: background .2s, color .2s; } .ds-button:hover { border-color: var(--blue-text); background: var(--blue-text); color: var(--white); } .ds-button:focus-visible { outline: 2px solid var(--blue-text); outline-offset: 4px; }"
+    },
+    {
+      "name": "Hero Inverse Action",
+      "kind": "button",
+      "refersTo": "button-inverse",
+      "description": "Use over the darkened homepage photograph.",
+      "html": "<a class=\"ds-hero-button\" href=\"#\">Find HBay in store</a>",
+      "css": ".ds-hero-button { display: inline-flex; align-items: center; justify-content: center; min-height: 50px; padding: 0 24px; border: 1px solid var(--white); border-radius: 0; background: var(--white); color: var(--ink); font: 500 15px/1.2 var(--sans); text-decoration: none; transition: background .2s, color .2s; } .ds-hero-button:hover { background: #E7EDF0; } .ds-hero-button:focus-visible { outline: 2px solid var(--white); outline-offset: 4px; }"
+    },
+    {
+      "name": "Navigation Link",
+      "kind": "nav",
+      "refersTo": "nav-link",
+      "description": "Use in the shared desktop navigation; indicate the current route with an underline.",
+      "html": "<a class=\"ds-nav-link\" href=\"#\" aria-current=\"page\">Our water</a>",
+      "css": ".ds-nav-link { display: inline-block; padding: 8px 0; color: var(--ink); font: 500 15px/1.4 var(--sans); text-decoration: none; text-underline-offset: 8px; } .ds-nav-link:hover, .ds-nav-link[aria-current=page] { text-decoration: underline; text-decoration-color: var(--ink); } .ds-nav-link:focus-visible { outline: 2px solid var(--blue-text); outline-offset: 4px; }"
+    },
+    {
+      "name": "Text Field",
+      "kind": "input",
+      "refersTo": "field",
+      "description": "Use for enquiry form entry on white surfaces.",
+      "html": "<label class=\"ds-field\"><span>Email address</span><input type=\"email\" placeholder=\"name@example.com\"></label>",
+      "css": ".ds-field { display: flex; flex-direction: column; gap: 7px; color: var(--ink); font: 600 14px/1.4 var(--sans); } .ds-field input { width: 100%; min-height: 50px; padding: 13px 14px; border: 1px solid #8E9BA4; border-radius: 0; background: var(--white); color: var(--ink); font: 400 16px/1.4 var(--sans); box-shadow: none; } .ds-field input:focus { outline: 2px solid var(--blue-text); outline-offset: 2px; border-color: var(--blue-text); }"
+    },
+    {
+      "name": "Choice Chip",
+      "kind": "chip",
+      "refersTo": "choice-chip",
+      "description": "Use for compact selectable enquiry options.",
+      "html": "<button class=\"ds-choice\" type=\"button\" aria-pressed=\"true\">Retail</button>",
+      "css": ".ds-choice { display: inline-block; padding: 8px 12px; border: 1px solid var(--rule); border-radius: 0; background: var(--white); color: var(--ink); font: 400 14px/1.4 var(--sans); cursor: pointer; } .ds-choice:hover, .ds-choice[aria-pressed=true] { border-color: var(--ink); background: var(--ink); color: var(--white); } .ds-choice:focus-visible { outline: 2px solid var(--blue-text); outline-offset: 3px; }"
+    },
+    {
+      "name": "Tasting-Sheet Row",
+      "kind": "custom",
+      "refersTo": "tasting-row",
+      "description": "Use to present a concise origin, quality, or format fact without a card.",
+      "html": "<div class=\"ds-sheet-row\"><dt>Origin</dt><dd>Hastings, Hawke’s Bay, New Zealand</dd></div>",
+      "css": ".ds-sheet-row { display: grid; grid-template-columns: 200px minmax(0, 1fr); gap: 24px; padding: 18px 0; border-bottom: 1px solid var(--rule); color: var(--ink); } .ds-sheet-row dt { padding-top: 4px; color: var(--ink-soft); font: 600 13px/1.4 var(--sans); letter-spacing: .06em; text-transform: uppercase; } .ds-sheet-row dd { margin: 0; color: var(--ink); font: 400 22px/1.35 var(--serif); } @media (max-width: 720px) { .ds-sheet-row { grid-template-columns: 1fr; gap: 4px; } .ds-sheet-row dd { font-size: 20px; } }"
+    }
+  ],
+  "narrative": {
+    "northStar": "Hawke’s Bay Cellar-Door Long Lunch",
+    "overview": "The site carries the welcome of a Hawke’s Bay cellar door into an everyday water brand. Its visual language pairs cool linen-like white with deep navy, the HBay blue mark, restrained rules, and the warmth of place-led photography. Bodoni Moda gives headlines the character of an estate label; Hanken Grotesk keeps navigation, facts, and forms direct and readable.\n\nThe homepage invites shoppers to a set table among the vines, then moves through source and tasting notes, everyday settings, the range, and places to buy. The other seven routes use the same masthead, footer, type, and palette, with their own editorial pace. Lifestyle images are labelled as AI concepts, and the homepage hero flags the package appearance as awaiting confirmation.",
+    "keyCharacteristics": [
+      "Region-led hospitality, expressed through a water brand.",
+      "Printed tasting-sheet cues: hairline rules, aligned values, and open space.",
+      "Clear contrast between the navy-and-linen foundation and small blue actions.",
+      "One responsive navigation and footer system across eight pages."
+    ],
+    "rules": [
+      { "name": "The Ink-and-Linen Rule", "body": "Keep the page calm and legible with navy type over linen or white. Reserve the brighter brand blue for brand recognition; use the deeper blue for text interactions.", "section": "colors" },
+      { "name": "The Two-Voice Rule", "body": "Use Bodoni Moda for expressive headings and selected values; use Hanken Grotesk for every interface label, paragraph, navigation item, and control.", "section": "typography" },
+      { "name": "The Tasting-Sheet Rule", "body": "For origin, quality, format, and other concise facts, align labels and values against a rule instead of placing each fact in a separate card.", "section": "layout" }
+    ],
+    "dos": [
+      "Do keep the exact brand slogan, “More Natural Better Living,” wherever the current site displays it.",
+      "Do preserve the source and imagery caveats: generated lifestyle scenes are concepts, and the homepage pack appearance needs client confirmation.",
+      "Do use darker blue for text links and keyboard focus, while keeping the brighter blue tied to the logo and brand mark.",
+      "Do keep editorial facts in ruled rows and preserve the generous, responsive page gutters."
+    ],
+    "donts": [
+      "Don't put text into photographs; keep words as live page content.",
+      "Don't default to blue splash or snowy-mountain category imagery; the chosen visual story belongs to Hawke’s Bay and its long-lunch setting.",
+      "Don't turn every content group into a rounded card or add decorative kicker labels and numbered sequence markers.",
+      "Don't present the single-sample mineral results as fixed specifications or the concept bottle as confirmed package photography."
+    ]
+  }
+}

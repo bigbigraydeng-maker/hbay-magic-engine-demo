@@ -1,16 +1,60 @@
 <!doctype html>
-<html lang="en"><head><meta name="robots" content="noindex,nofollow"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>HBay · Source documents</title>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-<style>
-*{box-sizing:border-box}body{margin:0;background:#e9f3f6;color:#102b4a;font:16px/1.65 'DM Sans',Arial,sans-serif}header{background:white;padding:24px 5%;display:flex;justify-content:space-between;gap:24px;align-items:center}a{color:inherit;text-underline-offset:4px}.download{display:inline-block;background:#315fba;color:white;padding:12px 20px;border-radius:4px;text-decoration:none}.intro{max-width:1024px;margin:48px auto 32px;padding:0 24px}h1{font-size:clamp(32px,4vw,52px);font-weight:500;line-height:1.15;letter-spacing:-1.5px;margin:12px 0 24px}.eyebrow{font-size:12px;letter-spacing:.03em;color:#315fba}.note{max-width:800px;color:#496176}.pages{max-width:1120px;margin:0 auto 64px;padding:0 24px}figure{margin:32px 0}figcaption{font-size:13px;color:#496176;margin-bottom:10px}img{display:block;width:100%;height:auto;background:white;border:1px solid #ccdde6}.status{font-size:13px;color:#496176}@media(max-width:650px){header{padding:18px 24px;font-size:13px}.download{padding:10px 14px}.intro{margin-top:32px}.pages{padding:0 12px}}
-</style><link rel="stylesheet" href="demo.css"><link rel="stylesheet" href="brand-v5.css"><link rel="stylesheet" href="brand-first.css"></head><body><div class="review"><span>Magic Engine · 网站设计演示 <span class="demo-status">DESIGN DEMO</span></span><a href="review.html">设计说明 ↗</a></div><header><a href="index.html#reports">← Back to HBay reports</a><a id="download" class="download" download>Download original PDF ↓</a></header><main><div class="intro"><h1 id="title"></h1><p class="note" id="note"></p><p class="status" id="status"></p></div><div class="pages" id="pages"></div></main>
+<html lang="en-NZ">
+<head>
+  <meta name="robots" content="noindex,nofollow">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>HBay · Source documents</title>
+  <link rel="stylesheet" href="wine-world.css">
+</head>
+<body>
+  <div class="demo-bar"><span>Magic Engine · HBay website design demo</span><a href="review.html">Design notes</a></div>
+  <header class="nav">
+    <a class="nav-logo" href="index.html" aria-label="HBay Water home"><img src="../assets/brand/hbay-logo.svg" alt="HBay Water" width="132" height="69"></a>
+    <nav class="nav-links" id="nav-links" aria-label="Main">
+      <a href="index.html#notes">Tasting notes</a><a href="index.html#list">The range</a><a href="our-water.html">Our water</a><a href="index.html#buy">Where to buy</a>
+    </nav>
+    <button class="nav-toggle" type="button" aria-controls="nav-links" aria-expanded="false">Menu</button>
+  </header>
+  <main>
+    <section class="page-hero solo">
+      <div class="page-hero-copy">
+        <h1 id="title"></h1>
+        <p class="note" id="note"></p>
+        <a id="download" class="download" download>Download supplied PDF</a>
+        <p class="status" id="status"></p>
+      </div>
+    </section>
+    <div class="pages" id="pages"></div>
+  </main>
+  <footer class="footer">
+    <div class="footer-row"><div><a class="footer-logo" href="index.html" aria-label="HBay Water home"><img src="../assets/brand/hbay-logo.svg" alt="HBay Water" width="132" height="69"></a><p class="footer-slogan">More Natural Better Living</p></div><nav aria-label="Footer"><a href="index.html#notes">Tasting notes</a><a href="index.html#list">The range</a><a href="our-water.html">Our water</a><a href="index.html#buy">Where to buy</a><a href="partner.html">Partner</a><a href="trade-export.html">Trade &amp; export</a><a href="contact.html">Contact</a><a href="privacy.html">Privacy</a></nav></div>
+    <div class="footer-base"><span>Magic Engine · HBay website design demo · Content subject to client review</span><a href="review.html">Design notes</a></div>
+  </footer>
 <script>
 const docs={
-water:{title:'Water test summary',note:'The supplied internal summary references Hill Labs report 4306093.2 for the Miracle sample dated 03 September 2026. It is not the original laboratory Certificate of Analysis. Results apply to the identified sample.',file:'water-tests.pdf',images:['water-tests.png']},
-geology:{title:'A landscape shaped by time',note:'Supplied extracts from the 1997 Heretaunga Plains Groundwater Study, with a Chinese translation dated 28 May 2018. The geological history describes the regional landscape, not the age of bottled water.',file:'geology.pdf',images:['geology.png','geology-page-2.png','geology-page-3.png','geology-page-4.png','geology-page-5.png','geology-page-6.png']},
-aquifer:{title:'Understanding the aquifer',note:'Hawke’s Bay Regional Council: known productive aquifer systems in the region. This is a regional reference map, not certification of an individual HBay well.',file:'artesian.pdf',images:['artesian.png']}
+  water:{title:'Water test summary',note:'Internal summary referencing Hill Labs report 4306093.2, for one identified sample. It is not the original laboratory Certificate of Analysis; results do not describe every bottle.',file:'water-tests.pdf',images:['water-tests.png']},
+  geology:{title:'Heretaunga Plains study extracts',note:'Supplied extracts from the 1997 Heretaunga Plains Groundwater Study. The geological history describes the regional landscape, not the age of bottled water.',file:'geology.pdf',images:['geology-page-2.png','geology-page-3.png','geology-page-4.png','geology-page-5.png','geology-page-6.png']},
+  aquifer:{title:'Regional aquifer reference map',note:'Hawke’s Bay Regional Council map of known productive aquifer systems. It gives regional context and does not identify or certify an individual HBay well.',file:'artesian.pdf',images:['artesian.png']}
 };
 const doc=docs[new URLSearchParams(location.search).get('doc')]||docs.water;
-document.title=doc.title+' · HBay';document.getElementById('title').textContent=doc.title;document.getElementById('note').textContent=doc.note;document.getElementById('download').href='../assets/'+doc.file;document.getElementById('status').textContent='Complete supplied document · '+doc.images.length+' page'+(doc.images.length===1?'':'s')+' · Original PDF available above';
-doc.images.forEach((name,i)=>{const fig=document.createElement('figure'),cap=document.createElement('figcaption'),img=document.createElement('img');cap.textContent='Page '+(i+1)+' of '+doc.images.length;img.src='../research/previews/'+name;img.alt=doc.title+' — original document page '+(i+1);if(i>0)img.loading='lazy';fig.append(cap,img);document.getElementById('pages').append(fig)});
-</script><p class="demo-footnote">Magic Engine · 网站设计演示 · <a href="review.html">本轮请确认设计方向与栏目架构</a></p></body></html>
+document.title=doc.title+' · HBay';
+document.getElementById('title').textContent=doc.title;
+document.getElementById('note').textContent=doc.note;
+document.getElementById('download').href='../assets/'+doc.file;
+document.getElementById('status').textContent='Supplied source document · '+doc.images.length+' preview page'+(doc.images.length===1?'':'s');
+doc.images.forEach(function(name,index){
+  const figure=document.createElement('figure');
+  const caption=document.createElement('figcaption');
+  const image=document.createElement('img');
+  caption.textContent='Source page '+(index+1)+' of '+doc.images.length;
+  image.src='../research/previews/'+name;
+  image.alt=doc.title+' — supplied source page '+(index+1);
+  if(index>0) image.loading='lazy';
+  figure.append(caption,image);
+  document.getElementById('pages').append(figure);
+});
+</script>
+<script src="site.js" defer></script>
+</body>
+</html>
