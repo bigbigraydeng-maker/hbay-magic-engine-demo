@@ -98,7 +98,7 @@ components:
 
 The site carries the welcome of a Hawke’s Bay cellar door into an everyday water brand. Its visual language pairs cool linen-like white with deep navy, the HBay blue mark, restrained rules, and the warmth of place-led photography. Bodoni Moda gives headlines the character of an estate label; Hanken Grotesk keeps navigation, facts, and forms direct and readable.
 
-The homepage invites shoppers to a set table among the vines, then moves through source and tasting notes, everyday settings, the range, and places to buy. The other seven routes use the same masthead, footer, type, and palette, with their own editorial pace. Lifestyle images are labelled as AI concepts, and the homepage hero flags the package appearance as awaiting confirmation.
+The homepage invites shoppers to a set table among the vines, then moves through source and tasting notes, everyday settings, the range, and places to buy. The “Wherever the table is” gallery uses three optimized images from the client’s Dropbox `marketing_creatives` folder: a quiet table, a coastal lunch, and a family table. Their landscape crop is preserved in a responsive 4:3 frame. The other seven routes use the same masthead, footer, type, and palette, with their own editorial pace. Lifestyle images are labelled as AI concepts, and the homepage hero flags the package appearance as awaiting confirmation.
 
 **Key Characteristics:**
 - Region-led hospitality, expressed through a water brand.
