@@ -501,3 +501,9 @@ body { letter-spacing: .002em; }
 @media (max-width: 720px) {
   .hero .credit { position: static; display: block; width: max-content; max-width: 92%; margin: 4px auto 20px; font-size: 12px; padding: 3px 9px; }
 }
+
+/* Hero title legibility: a soft top scrim on the photo (the title itself stays transparent). */
+.hero::before { content: ""; position: absolute; z-index: 1; inset: 0 0 auto 0; height: min(52%, 340px); pointer-events: none; background: linear-gradient(180deg, rgba(10,39,65,.58) 0%, rgba(10,39,65,.32) 55%, rgba(10,39,65,0) 100%); }
+@media (max-width: 720px) {
+  .hero::before { height: 120px; background: linear-gradient(180deg, rgba(10,39,65,.74) 0%, rgba(10,39,65,.42) 60%, rgba(10,39,65,0) 100%); }
+}
