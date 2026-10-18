@@ -44,16 +44,21 @@ section{position:relative}
 .link{font-weight:500;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:6px}
 .link:hover{color:var(--blue-text)}
 
-/* Hero: the table among the vines, un-fogged; headline set below on the linen like a cover line */
-.hero{background:var(--linen)}
-.hero-photo{width:100%;height:min(66vh,620px);object-fit:cover;object-position:50% 55%}
-.hero-copy{display:grid;grid-template-columns:7fr 5fr;gap:48px;align-items:end;max-width:var(--wrap);margin:0 auto;padding:56px var(--gutter) 24px}
-.hero h1{font-size:clamp(40px,4.6vw,68px)}
-.hero h1 .second{display:block;margin-top:.12em;color:var(--ink-soft)}
-.hero-side{align-self:end;padding-bottom:12px}
-.hero-slogan{font-size:19px;letter-spacing:.01em;color:var(--ink-soft)}
-.hero-actions{display:flex;flex-wrap:wrap;align-items:center;gap:20px 28px;margin-top:28px}
-.credit{position:absolute;z-index:2;right:16px;top:16px;font-size:12px;color:var(--white);background:rgba(14,34,51,.8);padding:3px 9px;border-radius:2px}
+/* Hero: the long-lunch table, with the whole invitation set into the photograph. */
+.hero{position:relative;display:flex;align-items:flex-end;min-height:min(760px,78svh);overflow:hidden;background:var(--ink);color:var(--white)}
+.hero-photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 55%}
+.hero::after{content:"";position:absolute;inset:38% 0 0;pointer-events:none;background:linear-gradient(0deg,rgba(14,34,51,.86) 0%,rgba(14,34,51,.54) 54%,rgba(14,34,51,0) 100%)}
+.hero-copy{position:relative;z-index:1;display:block;width:100%;max-width:var(--wrap);margin:0 auto;padding:56px var(--gutter) 52px}
+.hero .hero-title-overlay{position:absolute;z-index:1;top:8%;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:4px;width:min(92%,1000px);max-width:none;margin:0;color:#10385f;text-align:center;font-family:var(--serif);font-size:clamp(38px,5vw,68px);font-weight:500;line-height:.98;text-shadow:0 1px 10px rgba(235,247,255,.62)}
+.hero-title-overlay span:last-child{font-size:.48em;letter-spacing:.12em}
+.hero-side{margin-top:22px;max-width:620px}
+.hero-slogan{font-size:19px;letter-spacing:.01em;color:var(--white)}
+.hero-actions{display:flex;flex-wrap:wrap;align-items:center;gap:20px 28px;margin-top:24px}
+.hero .btn{background:var(--white);color:var(--ink)}
+.hero .btn:hover{background:#e7edf0}
+.hero .link{color:var(--white)}
+.hero .link:hover{color:#fff}
+.credit{position:absolute;z-index:2;right:16px;top:16px;font-size:12px;color:var(--white);background:rgba(14,34,51,.86);padding:4px 10px;border-radius:2px}
 
 /* Tasting notes: a printed sheet with hairline rules */
 .notes{padding:96px 0 112px}
@@ -72,7 +77,7 @@ section{position:relative}
 .moments{padding:0 0 112px}
 .moments-row{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:48px}
 .moments figure{margin:0}
-.moments img{width:100%;aspect-ratio:4/5;object-fit:cover}
+.moments img{width:100%;aspect-ratio:4/3;object-fit:cover}
 .moments figcaption{margin-top:14px;font-family:var(--serif);font-size:21px}
 .credit-line{margin-top:28px;font-size:13px;color:var(--ink-soft)}
 
@@ -117,14 +122,14 @@ section{position:relative}
 .footer nav a:hover{text-decoration:underline;text-underline-offset:4px}
 .footer-base{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;margin-top:48px;font-size:13px;color:var(--ink-soft)}
 .footer-base>span:first-child{flex:1}
-.footer-base{background:linear-gradient(var(--rule),var(--rule)) var(--gutter) 0/calc(100% - 2*var(--gutter)) 1px no-repeat;padding-top:20px}
+.footer-base{border-top:1px solid var(--rule);padding-top:20px}
 
 /* Tablet */
 @media (max-width:960px){
   .notes-grid,.source-grid{grid-template-columns:1fr;gap:40px}
 }
 
-/* Phone: photo first, headline below on linen */
+/* Phone: keep the full client campaign artwork visible, then place the store link below it. */
 @media (max-width:720px){
   body{font-size:16px}
   .nav{height:64px}
@@ -133,8 +138,14 @@ section{position:relative}
   .nav-links{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;gap:0;background:var(--linen);border-bottom:1px solid var(--rule);padding:8px var(--gutter) 16px}
   .nav-links.open{display:flex}
   .nav-links a{padding:14px 0;border-bottom:1px solid var(--rule)}
-  .hero-photo{height:auto;aspect-ratio:1/1;object-position:50% 50%}
-  .hero-copy{grid-template-columns:1fr;gap:24px;padding:36px var(--gutter) 8px}
+  .hero{height:auto;min-height:0;display:flex;flex-direction:column;align-items:stretch}
+  .hero-photo{position:relative;inset:auto;display:block;width:100%;height:auto;object-fit:contain;object-position:center}
+  .hero::after{display:none}
+  .hero-copy{max-width:none;padding:20px var(--gutter) 22px;background:var(--ink)}
+  .hero .hero-title-overlay{top:1.5%;gap:1px;width:96%;font-size:clamp(22px,6.8vw,28px);line-height:1}
+  .hero-title-overlay span:last-child{font-size:.52em;letter-spacing:.08em}
+  .hero-side{margin-top:0}
+  .hero-actions{gap:16px 22px;margin-top:0}
   .credit{top:12px;bottom:auto;right:12px}
   .notes,.list,.source,.buy{padding:80px 0}
   .moments{padding-bottom:80px}
