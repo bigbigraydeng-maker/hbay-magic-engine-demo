@@ -338,11 +338,11 @@ body { letter-spacing: .002em; }
 
 .demo-bar { min-height: 34px; }
 .demo-bar a { text-decoration-color: rgba(255,255,255,.42); text-underline-offset: 4px; }
-.nav { min-height: 82px; transition: min-height .25s ease, background-color .25s ease; }
+.nav { min-height: 82px; transition: background-color .25s ease; }
 .home-page .nav { background: #FBEFF3; border-bottom-color: #EED7DF; }
 .nav-logo img, .logo img { width: 110px; }
 .nav-links a, .links a { position: relative; }
-.home-page .nav-links a { padding: 10px 14px; border-radius: 2px; background: transparent; color: #fff; text-shadow: 0 1px 2px rgba(112,54,75,.9); transition: background-color .18s ease, transform .18s ease; }
+.home-page .nav-links a { padding: 10px 14px; border-radius: 2px; background: transparent; color: #fff; font-weight: 600; -webkit-text-stroke: .6px #7a3d57; paint-order: stroke fill; text-shadow: 0 1px 2px rgba(98,42,66,.95), 0 2px 3px rgba(98,42,66,.45); transition: background-color .18s ease, transform .18s ease; }
 .home-page .nav-links a:hover, .home-page .nav-links a:focus-visible,
 .home-page .nav-links a[aria-current="page"] { background: transparent; color: #fff; transform: translateY(-1px); text-decoration: underline; text-decoration-color: rgba(255,255,255,.7); text-underline-offset: 5px; }
 .home-page .nav-links a::after { display: none; }
@@ -384,7 +384,7 @@ body { letter-spacing: .002em; }
   white-space: normal;
   text-wrap: balance;
   color: #fff;
-  text-shadow: 0 2px 8px rgba(10,39,65,.65), 0 1px 2px rgba(10,39,65,.6);
+  text-shadow: 0 2px 3px rgba(10,39,65,.8), 0 1px 1px rgba(10,39,65,.9);
 }
 /* Let the headline use the full hero as its containing block. The image is in
    normal flow on phones, so anchoring the heading to the lower copy block put it
@@ -471,7 +471,7 @@ body { letter-spacing: .002em; }
   .nav-links a:hover, .links a:hover,
   .nav-links a[aria-current="page"], .links a[aria-current="page"] { color: var(--rose); }
   .home-page .nav-links { background: #FBEFF3; }
-  .home-page .nav-links a { margin: 4px 0; padding: 13px 14px; border: 0; border-bottom: 1px solid #EED7DF; background: transparent; color: #fff; text-shadow: 0 1px 2px rgba(112,54,75,.9); }
+  .home-page .nav-links a { margin: 4px 0; padding: 13px 14px; border: 0; border-bottom: 1px solid #EED7DF; background: transparent; color: #fff; font-weight: 600; -webkit-text-stroke: .6px #7a3d57; paint-order: stroke fill; text-shadow: 0 1px 2px rgba(98,42,66,.95), 0 2px 3px rgba(98,42,66,.45); }
   .home-page .nav-links a:hover, .home-page .nav-links a:focus-visible,
   .home-page .nav-links a[aria-current="page"] { color: #fff; background: transparent; }
   .hero .hero-title-overlay { top: 3%; width: 100%; padding: .2em 4vw; font-size: clamp(22px, 5.8vw, 36px); letter-spacing: -.015em; }
@@ -495,4 +495,9 @@ body { letter-spacing: .002em; }
 @media (prefers-reduced-motion: reduce) {
   .nav, .nav-links a::after, .links a::after, .button, .btn, .moments img,
   .menu li, .stores a, .reading-list a, .field input, .field select, .field textarea { transition: none; }
+}
+
+/* Mobile hero: keep the client credit chip off the title (it sat on top of "Artisan Water"). */
+@media (max-width: 720px) {
+  .hero .credit { position: static; display: block; width: max-content; max-width: 92%; margin: 4px auto 20px; font-size: 12px; padding: 3px 9px; }
 }
