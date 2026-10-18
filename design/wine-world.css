@@ -570,3 +570,12 @@ body { letter-spacing: .002em; }
   .slider-btn.next { right: 8px; }
   .product .sheet > div { grid-template-columns: 1fr; gap: 2px; }
 }
+
+/* Source section entry artwork: client brochure panel, links to Our water. */
+.source-art { margin: 0; justify-self: center; width: min(100%, 440px); }
+.source-art-link { display: block; overflow: hidden; border: 1px solid var(--rule); background: var(--white); }
+.source-art-link img { display: block; width: 100%; height: auto; transition: transform .5s ease; }
+.source-art-link:hover img, .source-art-link:focus-visible img { transform: scale(1.025); }
+.source-art figcaption { margin-top: 10px; color: var(--ink-soft); font-size: 13px; line-height: 1.5; }
+@media (max-width: 720px) { .source-art { width: min(100%, 360px); } }
+@media (prefers-reduced-motion: reduce) { .source-art-link img { transition: none; } }
