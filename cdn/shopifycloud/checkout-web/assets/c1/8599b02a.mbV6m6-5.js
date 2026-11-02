@@ -1,0 +1,1 @@
+import{k as e,l as t}from"./3d539943.Gq_ZnazE.js";function n(n,r,s,a){if(!n)return!1;const{expired:o,supportsInstallmentsInterestLoan:l}=n,u=e(r.value);return Boolean(o||s.value&&!t(n,u)||a.value&&!l)}export{n as i};

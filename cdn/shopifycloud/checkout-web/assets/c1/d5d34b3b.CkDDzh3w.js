@@ -1,0 +1,1 @@
+import{t as s,u as a}from"./2c1ab0fe.DFpQPhQX.js";import{f as e,g as o}from"./164ad2e3.aSMHlXmB.js";import{e as i,m as t}from"./3d539943.Gq_ZnazE.js";const r=()=>{const{checkout:r}=i(),u=r.configuration.visibility.showAside,m=t(),c=e({base:!0,medium:!1}),f=s(c),d=o();return a(()=>!d.value&&!(u.value&&!f.value&&m.value))};export{r as u};

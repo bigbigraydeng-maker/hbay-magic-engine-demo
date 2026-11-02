@@ -1,0 +1,1 @@
+import{u as t}from"./2c1ab0fe.DFpQPhQX.js";import{e}from"./3d539943.Gq_ZnazE.js";import{a as o}from"./164ad2e3.aSMHlXmB.js";const a=["paymentMethods"];function r(){const{checkout:{negotiator:r}}=e(),s=r.current.fields.paymentMethods,n=o(a);return t(()=>n.value&&!s.value?.length)}export{r as u};
