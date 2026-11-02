@@ -1,15 +1,16 @@
-# HBay 官网改版样稿 V5
+# HBay 官网（hbaywater.com）
 
-New Zealand Miracle Water（HBay Water）官网改版样稿，版式参照 Icelandic Glacial，内容为 HBay。
+New Zealand Miracle Water（HBay Water）官网，版式参照 Icelandic Glacial，内容为 HBay。
 
-线上地址：https://hbay-v5.cloud01.top
+线上地址：https://hbaywater.com （正式官网，2026-11-03 起）
 
 ## 开发方式：直接修改 HTML
 
 - 页面：`index.html`（另有 `privacy.html` / `terms.html`）
 - HBay 图片、logo、超市 logo：`hbay/`。新素材一律放这里，不引用外部图片链接
 - `cdn/`、`_ext/` 等目录是原站主题的样式、脚本与字体
-- 页面带 `noindex`，不被搜索引擎收录
+- 页面目前仍带 `noindex`，不被搜索引擎收录（正式开放收录前要去掉）
+- 字体只用免费授权字体：标题 Fraunces（`hbay/fonts/`，SIL OFL），正文 Figtree。不要再放收费字体文件
 
 ## 本地预览
 
@@ -37,17 +38,15 @@ gh pr create                          # 提 Pull Request，确认后合并到 ma
 - `main` 只保留可上线的状态，不在 `main` 上直接提交
 - 不提交 `.env`、密钥、账号密码
 
-## 部署（Jundong 执行）
+## 部署
 
-PR 合并到 `main` 后：
+本仓库就是 hbaywater.com 的线上代码，由 GitHub Pages 从 `main` 根目录直接发布，无构建步骤：
 
-```bash
-git pull
-rsync -az --delete --exclude .git --exclude README.md --exclude .gitignore \
-  -e 'ssh -p 2048' ./ jundong@103.44.166.82:~/apps/hbay-demos/sites/v5-icelandic/
-```
+- PR 合并到 `main` 后几分钟内自动上线，不需要再手动上传服务器
+- `CNAME` 文件（内容 `hbaywater.com`）和 `.nojekyll` 不要删，删了域名或 `_ext/` 目录会失效
+- 域名解析在 GoDaddy：`@` 指向 GitHub Pages 的四个地址，`www` 指向 `bigbigraydeng-maker.github.io`
 
-部署后从公网打开 https://hbay-v5.cloud01.top 确认。
+上线后从公网打开 https://hbaywater.com 确认。
 
 ## 内容说明
 
