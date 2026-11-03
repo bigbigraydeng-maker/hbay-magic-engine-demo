@@ -1,0 +1,26 @@
+/* HBay site fixes on top of the theme CSS. Loaded last from index.html. */
+
+/* Hero slideshow: base.css forces every .banner into a column at <=980px,
+   which stacked the two hero slides on phones and tablets. */
+@media screen and (max-width: 980px) {
+  slideshow-component .slideshow.banner {
+    flex-direction: row !important;
+  }
+}
+
+/* Image + text rows: no white strip between rows, no 1px frame round the photos. */
+.multirow__inner {
+  gap: 0 !important;
+}
+
+.image-with-text__media {
+  border: 0 !important;
+}
+
+/* Phone: footer text lines up with the text blocks above it (30px gutter). */
+@media screen and (max-width: 749px) {
+  .footer__content-top.page-width {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
