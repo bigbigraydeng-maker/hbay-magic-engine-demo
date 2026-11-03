@@ -40,11 +40,12 @@ gh pr create                          # 提 Pull Request，确认后合并到 ma
 
 ## 部署
 
-本仓库就是 hbaywater.com 的线上代码，由 GitHub Pages 从 `main` 根目录直接发布，无构建步骤：
+本仓库就是 hbaywater.com 的线上代码，由 **Cloudflare Pages**（项目 `hbaywater`，账号 hello@magicengine.cloud）从 `main` 自动发布，无构建步骤：
 
-- PR 合并到 `main` 后几分钟内自动上线，不需要再手动上传服务器
-- `CNAME` 文件（内容 `hbaywater.com`）和 `.nojekyll` 不要删，删了域名或 `_ext/` 目录会失效
-- 域名解析在 GoDaddy：`@` 指向 GitHub Pages 的四个地址，`www` 指向 `bigbigraydeng-maker.github.io`
+- PR 合并到 `main` 后一两分钟内自动上线，不需要手动上传
+- 每个 PR 会自动生成一个预览链接（`*.hbaywater.pages.dev`），合并前可以先看效果
+- 域名 hbaywater.com 在 GoDaddy 注册，解析由 Cloudflare 管（GoDaddy 的域名服务器已改成 Cloudflare 的）
+- `CNAME` 文件和 `.nojekyll` 留着：旧的 github.io 演示链接靠它们自动跳到 hbaywater.com
 
 上线后从公网打开 https://hbaywater.com 确认。
 
